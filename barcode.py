@@ -44,7 +44,7 @@ class Barcode:
 import sys
 
 encoder_name, code, *more_option = sys.argv[1:]
-bCode = Barcode(encoder_name, code, ' '.join(more_option))
+bCode = Barcode(encoder_name, code, more_option=' '.join(more_option))
 sys.stdout.write(bCode.render())
 sys.stdout.flush()
 
